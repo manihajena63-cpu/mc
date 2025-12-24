@@ -3,12 +3,20 @@ import { Search } from 'lucide-react';
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="mc-wood-bg p-4 border-4 border-black text-white h-fit">
-        <h3 className="text-3xl text-[#fcd03f] pixel-text-shadow text-center mb-6 border-b-4 border-[#3e2b22] pb-2">
+    <div 
+        className="p-4 border-4 border-black text-white h-fit relative"
+        style={{
+            backgroundImage: "url('https://youke2.picui.cn/s1/2025/12/24/694bd4d592909.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            imageRendering: 'pixelated'
+        }}
+    >
+        <h3 className="text-3xl text-[#fcd03f] pixel-text-shadow text-center mb-6 border-b-4 border-[#3e2b22] pb-2 relative z-10">
             FILTER SERVERS
         </h3>
 
-        <div className="space-y-6">
+        <div className="space-y-6 relative z-10">
             {/* Game Mode */}
             <div>
                 <div className="flex items-center gap-2 mb-2">

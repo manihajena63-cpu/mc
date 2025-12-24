@@ -20,7 +20,16 @@ const Navbar: React.FC = () => {
                         alt="Minecraft" 
                         className="h-10 md:h-12 w-auto object-contain drop-shadow-lg mb-1" 
                     />
-                    <h2 className="text-3xl md:text-4xl text-[#fcd03f] pixel-text-shadow leading-none tracking-widest">PUBLIC SERVERS</h2>
+                    <h2 
+                        className="text-4xl md:text-5xl font-bold tracking-widest mt-1"
+                        style={{
+                            color: '#d1d1d1',
+                            textShadow: '0px 4px 0px #505050, 0px 6px 0px #1a1a1a, 2px 2px 10px rgba(0,0,0,0.5)',
+                            fontFamily: '"VT323", monospace'
+                        }}
+                    >
+                        PUBLIC SERVERS
+                    </h2>
                 </div>
                 <img src={ASSETS.sword} className="w-12 h-12 drop-shadow-lg" alt="sword" />
             </div>

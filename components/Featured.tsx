@@ -42,7 +42,15 @@ const FEATURED: ServerItem[] = [
 
 const Featured: React.FC = () => {
   return (
-    <div className="mc-stone-bg p-4 border-4 border-black relative overflow-hidden">
+    <div 
+        className="p-4 border-4 border-black relative overflow-hidden"
+        style={{
+            backgroundImage: "url('https://youke2.picui.cn/s1/2025/12/24/694bd22c5384b.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            imageRendering: 'pixelated'
+        }}
+    >
         {/* Background Grid Pattern Overlay */}
         <div className="absolute inset-0 pointer-events-none opacity-20" 
              style={{backgroundImage: 'linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px)', backgroundSize: '40px 40px'}}>
